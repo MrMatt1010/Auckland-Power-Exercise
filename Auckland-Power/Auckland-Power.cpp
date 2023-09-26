@@ -2,6 +2,7 @@
 //
 
 #include <iostream>
+using namespace std;
 #include <string>
 
 double calculateBill(int unitsConsumed) {
@@ -29,38 +30,38 @@ double calculateBill(int unitsConsumed) {
 }
 
 int main() {
-	std::cout << "Auckland Power - Customer Bill Generator\n\n";
-	std::cout << "****************************************\n\n";
+	cout << "Auckland Power - Customer Bill Generator\n\n";
+	cout << "****************************************\n\n";
 
 	int customerNumber;
 	int unitsConsumed;
-	std::string customerName;
+	string customerName;
 
 	//This part of the program is asking for customers details
-	std::cout << "Enter Customer Number ";
-	std::cin >> customerNumber;
-	std::cout << "Enter Customer Name ";
-	std::cin >> customerName;
-	std::cout << "Enter Units Consumed ";
-	std::cin >> unitsConsumed;
-	std::cout << "\n";
+	cout << "Enter Customer Number ";
+	cin >> customerNumber;
+	cout << "Enter Customer Name ";
+	cin >> customerName;
+	cout << "Enter Units Consumed ";
+	cin >> unitsConsumed;
+	cout << "\n";
 
 	//This is where the bill gets calculated
 	double amount = calculateBill(unitsConsumed);
 
 	//Generation of the bill is done here and displayed for the customer
-	std::cout << "Auckland Power - Customer\n\n " << customerNumber;
-	std::cout << "**************\n\n";
+	cout << "Auckland Power - Customer " << customerNumber << endl << endl;
+	cout << "************** " << endl <<endl;
 
-	std::cout << "Customer Name: " << customerName;
+	cout << "\nCustomer Name: " << customerName << endl << endl;
 
-	std::cout << "Customer Number: " << customerNumber;
+	cout << "Customer Number: " << customerNumber << endl << endl;
 
-	std::cout << "Consumed Units: " << unitsConsumed;
+	cout << "Consumed Units: " << unitsConsumed << endl << endl;
 
-	std::cout << "Amount: " << amount;
+	cout << "Amount: " << amount << endl << endl;
 
-	std::cout << "****************";
+	cout << "****************" << endl;
 
 	return(0);
 }
