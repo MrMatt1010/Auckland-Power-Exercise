@@ -45,6 +45,22 @@ int main() {
 	std::cin >> unitsConsumed;
 	std::cout << "\n";
 
+	//This is where the bill gets calculated
+	double amount = calculateBill(unitsConsumed);
 
+	//Generation of the bill is done here and displayed for the customer
+	std::cout << "Auckland Power - Customer\n\n " << customerNumber;
+	std::cout << "**************\n\n";
 
+	std::cout << "Customer Name: " << customerName;
+
+	std::cout << "Customer Number: " << customerNumber;
+
+	std::cout << "Consumed Units: " << unitsConsumed;
+
+	std::cout << "Amount: " << amount;
+
+	std::cout << "****************";
+
+	return(0);
 }
