@@ -1,9 +1,8 @@
-// Auckland-Power.cpp : 
-//
+// Auckland-Power.cpp  
+
 
 #include <iostream>
-using namespace std;
-#include <string>
+#include <string> //include this lib to use the string variable
 
 double calculateBill(int unitsConsumed) {
 	//Rate of Auckland power coded in for assessment
@@ -30,38 +29,38 @@ double calculateBill(int unitsConsumed) {
 }
 
 int main() {
-	cout << "Auckland Power - Customer Bill Generator\n\n";
-	cout << "****************************************\n\n";
+	std::cout << "Auckland Power - Customer Bill Generator\n\n";
+	std::cout << "****************************************\n\n";
 
 	int customerNumber;
 	int unitsConsumed;
-	string customerName;
+	std::string customerName;
 
 	//This part of the program is asking for customers details
-	cout << "Enter Customer Number ";
-	cin >> customerNumber;
-	cout << "Enter Customer Name ";
-	cin >> customerName;
-	cout << "Enter Units Consumed ";
-	cin >> unitsConsumed;
-	cout << "\n";
+	std::cout << "Enter Customer Number ";
+	std::cin >> customerNumber;
+	std::cout << "Enter Customer Name ";
+	std::cin >> customerName;
+	std::cout << "Enter Units Consumed ";
+	std::cin >> unitsConsumed;
+	std::cout << "\n";
 
 	//This is where the bill gets calculated
 	double amount = calculateBill(unitsConsumed);
 
 	//Generation of the bill is done here and displayed for the customer
-	cout << "Auckland Power - Customer " << customerNumber << endl << endl;
-	cout << "************** " << endl <<endl;
+	std::cout << "Auckland Power - Customer " << customerNumber << std::endl << std::endl;
+	std::cout << "************** " << std::endl << std::endl;
 
-	cout << "\nCustomer Name: " << customerName << endl << endl;
+	std::cout << "\nCustomer Name: " << customerName << std::endl << std::endl;
 
-	cout << "Customer Number: " << customerNumber << endl << endl;
+	std::cout << "Customer Number: " << customerNumber << std::endl << std::endl;
 
-	cout << "Consumed Units: " << unitsConsumed << endl << endl;
+	std::cout << "Consumed Units: " << unitsConsumed << std::endl << std::endl;
 
-	cout << "Amount: " << amount << endl << endl;
+	std::cout << "Amount: " << amount << std::endl << std::endl;
 
-	cout << "****************" << endl;
+	std::cout << "****************" << std::endl;
 
 	return(0);
 }
