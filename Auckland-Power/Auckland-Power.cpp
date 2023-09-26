@@ -2,6 +2,7 @@
 //
 
 #include <iostream>
+#include <string>
 
 double calculateBill(int unitsConsumed) {
 	//Rate of Auckland power coded in for assessment
@@ -25,4 +26,25 @@ double calculateBill(int unitsConsumed) {
 		amount = ((unitsConsumed - 300) * rate_4) + (100 * rate_3) + (100 * rate_2) + (100 * rate_1);
 	}
 	return amount; 
+}
+
+int main() {
+	std::cout << "Auckland Power - Customer Bill Generator\n\n";
+	std::cout << "****************************************\n\n";
+
+	int customerNumber;
+	int unitsConsumed;
+	std::string customerName;
+
+	//This part of the program is asking for customers details
+	std::cout << "Enter Customer Number ";
+	std::cin >> customerNumber;
+	std::cout << "Enter Customer Name ";
+	std::cin >> customerName;
+	std::cout << "Enter Units Consumed ";
+	std::cin >> unitsConsumed;
+	std::cout << "\n";
+
+
+
 }
